@@ -1,4 +1,4 @@
-header {
+﻿header {
   background-color: #3c49a1;
   color: #ffffff;
   text-align: center;
@@ -236,4 +236,65 @@ body {
     text-align: center;
   }
 
+}
+
+body.masha-theme header {
+    background-color: #e8a0b4;
+    color: #ffffff;
+}
+
+body.masha-theme .carousel-controls button {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+body.masha-theme .carousel-controls button:hover {
+    background-color: #f1b0b7;
+}
+
+body.masha-theme .carousel-window {
+    background-color: #fdf2f8;
+}
+
+body.masha-theme .slide-caption {
+    color: #d63384;
+}
+
+.avatar {
+    cursor: pointer; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.avatar.enlarged {
+    transform: scale(2.5);
+    z-index: 1000;
+    position: relative; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+.avatar.enlarged {
+    transform: scale(2.5) translate(100px, 0px); 
+    transform-origin: top left;
+    z-index: 1000;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.slide {
+    cursor: pointer; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slide.enlarged {
+    transform: scale(2.5) translate(0px, -100px);
+    transform-origin: center center; 
+    z-index: 1000;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background-color: #fdf2f8; 
+}
+
+.carousel-window {
+    overflow: visible !important; 
 }
