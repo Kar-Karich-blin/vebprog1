@@ -260,6 +260,10 @@ body.masha-theme .slide-caption {
     color: #d63384;
 }
 
+body.sonya-theme header {
+  background-color: #582d82;
+}
+
 .avatar {
     cursor: pointer; 
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
