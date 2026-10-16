@@ -211,6 +211,32 @@ body.alina-theme .slide-caption {
     color: #d3698c;
 }
 
+body.kari-theme {
+    background-color: #92243c;
+}
+
+body.kari-theme header {
+    background-color: #4c070d;
+    color: #edc8d0;
+}
+
+body.kari-theme .carousel-controls button {
+    background-color: #46030e79;
+    color: #f7e8ef;
+}
+
+body.kari-theme .carousel-controls button:hover {
+    background-color: #ffeb39;
+}
+
+body.kari-theme .carousel-window {
+    background-color: #fef9df;
+}
+
+body.kari-theme .slide-caption {
+    color: #ffe58e;
+}
+
 .avatar {
     cursor: pointer; 
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
