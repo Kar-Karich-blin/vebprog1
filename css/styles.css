@@ -185,6 +185,32 @@ body.sonya-theme header {
   background-color: #582d82;
 }
 
+body.alina-theme {
+    background-color: #e9d8a9;
+}
+
+body.alina-theme header {
+    background-color: #e7d08c;
+    color: #81233f;
+}
+
+body.alina-theme .carousel-controls button {
+    background-color: #ff9fc479;
+    color: #fff5d4;
+}
+
+body.alina-theme .carousel-controls button:hover {
+    background-color: #b44f76;
+}
+
+body.alina-theme .carousel-window {
+    background-color: #ecdfb7;
+}
+
+body.alina-theme .slide-caption {
+    color: #d3698c;
+}
+
 .avatar {
     cursor: pointer; 
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
