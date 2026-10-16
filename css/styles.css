@@ -1,5 +1,5 @@
 ﻿header {
-  background-color: #3c49a1;
+  background-color: #283618;
   color: #ffffff;
   text-align: center;
   padding: 5%;
@@ -15,6 +15,10 @@ body {
   padding-right: 10%;
 }
 
+body.main-theme {
+  background-color: #fefae0;
+}
+
 .container {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -22,12 +26,12 @@ body {
 }
 
 .intro {
-  background-color: #add8e6;
+  background-color: #606c38;
   padding: 20px;
 }
 
 .photos {
-  background-color: #ffb6c1;
+  background-color: #606c38;
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(2, 100px);
@@ -55,7 +59,7 @@ body {
 
 .people {
   grid-column: 1 / -1;
-  background-color: #a0f0a8;
+  background-color: #e4b076;
   padding: 20px;
 
   display: grid;
@@ -65,7 +69,7 @@ body {
 
 .person {
   padding: 10px;
-  background-color: #60ec7c;
+  background-color: #dda15e;
 }
 
 .person h2 {
@@ -155,6 +159,70 @@ body {
   background-color: #bea3d8;
 }
 
+body.masha-theme header {
+    background-color: #e8a0b4;
+    color: #ffffff;
+}
+
+body.masha-theme .carousel-controls button {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+body.masha-theme .carousel-controls button:hover {
+    background-color: #f1b0b7;
+}
+
+body.masha-theme .carousel-window {
+    background-color: #fdf2f8;
+}
+
+body.masha-theme .slide-caption {
+    color: #d63384;
+}
+
+body.sonya-theme header {
+  background-color: #582d82;
+}
+
+.avatar {
+    cursor: pointer; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.avatar.enlarged {
+    transform: scale(2.5);
+    z-index: 1000;
+    position: relative; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.avatar.enlarged {
+    transform: scale(2.5) translate(100px, 0px); 
+    transform-origin: top left;
+    z-index: 1000;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.slide {
+    cursor: pointer; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slide.enlarged {
+    transform: scale(2.5) translate(0px, -100px);
+    transform-origin: center center; 
+    z-index: 1000;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background-color: #fdf2f8; 
+}
+
+.carousel-window {
+    overflow: visible !important; 
+}
+
 @media (max-width: 600px) {
   .container {
     grid-template-columns: 1fr;
@@ -202,6 +270,13 @@ body {
     object-fit: cover;
   }
 
+  .avatar.enlarged {
+    transform: scale(1.10) translate(0px, 90px);
+    transform-origin: center center;
+    position: relative;
+    z-index: 1000;
+  }
+
   .person-header h1 {
     margin: 0;
     text-align: center;
@@ -228,6 +303,16 @@ body {
     object-fit: contain;
   }
 
+  .slide.enlarged {
+    transform: scale(1.1) translate(0px, -100px);
+    transform-origin: center center; 
+    z-index: 1000;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background-color: #fdf2f8; 
+}
+
+
   .carousel-controls {
     justify-content: center;
   }
@@ -236,69 +321,4 @@ body {
     text-align: center;
   }
 
-}
-
-body.masha-theme header {
-    background-color: #e8a0b4;
-    color: #ffffff;
-}
-
-body.masha-theme .carousel-controls button {
-    background-color: #f8d7da;
-    color: #721c24;
-}
-
-body.masha-theme .carousel-controls button:hover {
-    background-color: #f1b0b7;
-}
-
-body.masha-theme .carousel-window {
-    background-color: #fdf2f8;
-}
-
-body.masha-theme .slide-caption {
-    color: #d63384;
-}
-
-body.sonya-theme header {
-  background-color: #582d82;
-}
-
-.avatar {
-    cursor: pointer; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-}
-
-.avatar.enlarged {
-    transform: scale(2.5);
-    z-index: 1000;
-    position: relative; 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-
-.avatar.enlarged {
-    transform: scale(2.5) translate(100px, 0px); 
-    transform-origin: top left;
-    z-index: 1000;
-    position: relative;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-.slide {
-    cursor: pointer; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.slide.enlarged {
-    transform: scale(2.5) translate(0px, -100px);
-    transform-origin: center center; 
-    z-index: 1000;
-    position: relative;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    background-color: #fdf2f8; 
-}
-
-.carousel-window {
-    overflow: visible !important; 
 }
